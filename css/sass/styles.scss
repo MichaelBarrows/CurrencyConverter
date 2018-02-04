@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+
+}
+
+section {
+  min-height: 80vh;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  .currencies {
+    font-size: 2rem;
+    font-weight: bold;
+    .symbol {
+      padding: 5px;
+      abbr {
+        text-decoration: none;
+      }
+    }
+  }
+}
