@@ -3,19 +3,36 @@
 <head>
   <title>Currency Converter</title>
   <link rel="stylesheet" href="css/styles.css">
-  <stript src="js/app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
 </head>
 <body>
   <header>
     <h1>Currency Converter</h1>
   </header>
   <section>
-    <div class="currencies">
-      <span class="symbol"><abbr title="US Dollar">&dollar;</abbr></span>
-      <span class="symbol"><abbr title="Euro">&euro;</abbr></span>
-      <span class="symbol"><abbr title="Japanese Yen">&yen;</abbr></span>
-      <span class="symbol"><abbr title="Russian Ruble">&#x20BD;</abbr></span>
+    <div class="inner">
+    <form id="currencyconverter">
+      <label for="amountToConvert">Amount to convert</label>
+      <input type="text" id="amountToConvert" name="amount" placeholder="&pound;">
+
+      <label for="currency">Select a currency:</label>
+      <select name="currency" id="currency">
+        <option value="USD">&dollar; USD - US Dollar</option>
+        <option value="EUR">&euro; EUR - Euro</option>
+        <option value="JPY">&yen; JPY - Japenese Yen</option>
+        <option value="AUD">&dollar; AUD - Australian Dollar</option>
+        <option value="CAD">&dollar; CAD - Canadian Dollar</option>
+      </select>
+      <input type="submit" value="Convert">
+    </form>
+    <div id="converted-container">
+      <p>&pound;<span id="original-amount"></span> = <span id="converted-amount"></span></p>
     </div>
+    <p id="conversion-rate"></p>
+  </div>
   </section>
   <footer>&copy; Michael Barrows 2018.</footer>
 
