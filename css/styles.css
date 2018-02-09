@@ -1,22 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
 body {
   margin: 0;
   padding: 0;
   background-color: #000;
   color: #fff;
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif; }
+
+h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
   text-align: center; }
 
 section {
-  min-height: 80vh;
+  min-height: 400px;
   max-width: 400px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 10px 0;
+  background-color: #FFF;
+  color: #000;
+  box-sizing: border-box; }
+  section .inner {
+    max-width: 90%;
+    margin: 0 auto; }
+    section .inner form label {
+      text-align: left;
+      margin: 25px 0 0 5px;
+      font-size: 1.1em; }
+    section .inner form input, section .inner form select {
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 15px;
+      font-size: 1.1em;
+      padding: 10px;
+      border: solid 2px #ccc;
+      background-color: #FFF; }
+    section .inner form input[type=submit] {
+      margin-top: 1.2em;
+      background-color: #000;
+      color: #fff; }
+    section .inner form select option {
+      font-family: "Work Sans", sans-serif !important; }
+    section .inner #converted-container {
+      display: none;
+      font-size: 1.5rem;
+      text-align: center; }
+      section .inner #converted-container p {
+        margin: 10px 0 0 0; }
+    section .inner #conversion-rate {
+      text-align: center; }
   section .currencies {
-    font-size: 2rem;
-    font-weight: bold; }
+    font-size: 2rem; }
     section .currencies .symbol {
-      padding: 5px; }
+      padding: 10px; }
       section .currencies .symbol abbr {
         text-decoration: none; }
+
+footer {
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
