@@ -1,89 +1,109 @@
+// import the Work Sans font
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
 
 // Variables
 $form-font-size: 1.1em;
+$work-sans-font: 'Work Sans', sans-serif;
 
+// Ensures the body takes up the entire browser window
 body {
   margin: 0;
   padding: 0;
-  background-color: #000;
-  color: #fff;
-
-  font-family: 'Work Sans', sans-serif;
-  // font-weight: lighter;
-  // letter-spacing: 0.1em;
-
+  font-family: $work-sans-font;
 }
 
+// makes the font-weight lighter, increases letter spacing and centers the
+// text in the heading 1 element
 h1 {
-  font-family: 'Work Sans', sans-serif;
   font-weight: lighter;
   letter-spacing: 0.1em;
   text-align: center;
-
 }
 
+// The section holds the actual currency converter widget
 section {
+  // sets the height and width to be a square
   min-height: 400px;
   max-width: 400px;
+  // centers the section element (as this is the only content on the page)
   margin-left: auto;
   margin-right: auto;
   padding: 10px 0;
   background-color: #FFF;
   color: #000;
+  // ensures padding and margins fit within the overall width and height of
+  // the section element
   box-sizing: border-box;
+  // contains the form and all widget elements
   .inner {
+    // gives the widget some padding around the section and center's it's
+    // containing elements
     max-width: 90%;
     margin: 0 auto;
     form {
+      // stles the forms labels, making them larger and indented to match the
+      // form elements
       label {
         text-align: left;
         margin: 25px 0 0 5px;
         font-size: $form-font-size;
       }
+      // styles input and dropdown fields in the form
       input, select {
+        // ensures padding and margins are contained within the elements width
         box-sizing: border-box;
         width: 100%;
         margin-bottom: 15px;
+        // increases the font size to 1.1em
         font-size: $form-font-size;
         padding: 10px;
+        // Gives the inputs a grey border
         border: solid 2px #ccc;
         background-color: #FFF;
       }
+      // styles the submit button
       input[type=submit] {
         margin-top: 1.2em;
-        background-color: #000;
+        // colour used on doggiegadgets.com
+        background-color: #452402;
         color: #fff;
+        // font used on doggiegadgets.com
+        font-family: $work-sans-font;
+        // makes the text uppercase
+        text-transform: uppercase;
+        font-weight: 400;
+        // increases the spacing between letters
+        letter-spacing: 0.1em;
+        // makes the submit button semi-transparant when the user hovers over it
+        &:hover {
+          opacity: 0.6;
+        }
       }
-      input {
-      }
+      // Styles the individual options in the drop down currencies list
       select option {
-        font-family: 'Work Sans', sans-serif!important;
+        font-family: $work-sans-font;
       }
     }
+    // holds the conversion information, initially not displayed until the user
+    // starts converting
     #converted-container {
       display: none;
+      // increases the font size of the conversion information to increase
+      // prominence
       font-size: 1.5rem;
       text-align: center;
       p {
         margin: 10px 0 0 0;
       }
     }
+    // centers the conversion rate information
     #conversion-rate {
       text-align: center;
     }
   }
-  .currencies {
-    font-size: 2rem;
-    .symbol {
-      padding: 10px;
-      abbr {
-        text-decoration: none;
-      }
-    }
-  }
 }
 
+// Centers the footer
 footer {
   text-align: center;
 }

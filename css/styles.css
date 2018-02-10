@@ -2,12 +2,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #000;
-  color: #fff;
-  font-family: 'Work Sans', sans-serif; }
+  font-family: "Work Sans", sans-serif; }
 
 h1 {
-  font-family: 'Work Sans', sans-serif;
   font-weight: lighter;
   letter-spacing: 0.1em;
   text-align: center; }
@@ -38,10 +35,16 @@ section {
       background-color: #FFF; }
     section .inner form input[type=submit] {
       margin-top: 1.2em;
-      background-color: #000;
-      color: #fff; }
+      background-color: #452402;
+      color: #fff;
+      font-family: "Work Sans", sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 0.1em; }
+      section .inner form input[type=submit]:hover {
+        opacity: 0.6; }
     section .inner form select option {
-      font-family: "Work Sans", sans-serif !important; }
+      font-family: "Work Sans", sans-serif; }
     section .inner #converted-container {
       display: none;
       font-size: 1.5rem;
@@ -50,12 +53,6 @@ section {
         margin: 10px 0 0 0; }
     section .inner #conversion-rate {
       text-align: center; }
-  section .currencies {
-    font-size: 2rem; }
-    section .currencies .symbol {
-      padding: 10px; }
-      section .currencies .symbol abbr {
-        text-decoration: none; }
 
 footer {
   text-align: center; }
