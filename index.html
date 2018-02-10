@@ -12,11 +12,15 @@
   <header>
     <h1>Currency Converter</h1>
   </header>
+  <!-- Contains the currency converter widget -->
   <section>
     <div class="inner">
+      <!-- Currency Converter form -->
     <form id="currencyconverter">
+      <!-- Amount for conversion -->
       <label for="amountToConvert">Amount to convert</label>
       <input type="text" id="amountToConvert" name="amount" placeholder="&pound;">
+      <!-- Currency selection for the conversion -->
       <label for="currency">Select a currency:</label>
       <select name="currency" id="currency">
         <option value="USD">&dollar; USD - US Dollar</option>
@@ -27,9 +31,11 @@
       </select>
       <input type="submit" value="Convert">
     </form>
+    <!-- Converion results are displayed once the conversion is complete -->
     <div id="converted-container">
       <p>&pound;<span id="original-amount"></span> = <span id="converted-amount"></span></p>
     </div>
+    <!-- Displays the conversion rate information -->
     <p id="conversion-rate"></p>
   </div>
   </section>
