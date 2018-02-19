@@ -81,24 +81,29 @@ CurrencyConverter.prototype.convert = function() {
 // Waits until the DOM is ready to be manipulated before any of the containing
 // code can be run
 $(document).ready(function(){
+  // Function used to change the flag displayed when the dropdown field is clicked
   $('select#currency').on('click', function(event) {
-  var currency = $('select[name="currency"]').val();
-  if (currency == "USD") {
-    document.getElementById('currency').style.background = "url(img/USD.png) right 40px center no-repeat";
-  } else if (currency == "EUR") {
-    document.getElementById('currency').style.background = "url(img/EUR.png) right 40px center no-repeat";
-  } else if (currency == "JPY") {
-    document.getElementById('currency').style.background = "url(img/JPY.png) right 40px center no-repeat";
-  } else if (currency == "AUD") {
-    document.getElementById('currency').style.background = "url(img/AUD.png) right 40px center no-repeat";
-  } else if (currency == "CAD") {
-    document.getElementById('currency').style.background = "url(img/CAD.png) right 40px center no-repeat";
-  }
-
-  document.getElementById('currency').style.backgroundSize = "40px";
-});
-
-
+    // gets the dropdown field
+    var currency = $('select[name="currency"]').val();
+    // Checks if USD is the currency and sets the flag
+    if (currency == "USD") {
+      document.getElementById('currency').style.background = "url(img/USD.png) right 40px center no-repeat";
+    // Checks if EUR is the currency and sets the flag
+    } else if (currency == "EUR") {
+      document.getElementById('currency').style.background = "url(img/EUR.png) right 40px center no-repeat";
+    // Checks if JPY is currency and sets the flag
+    } else if (currency == "JPY") {
+      document.getElementById('currency').style.background = "url(img/JPY.png) right 40px center no-repeat";
+    // Checks if AUD is currency and sets the flag
+    } else if (currency == "AUD") {
+      document.getElementById('currency').style.background = "url(img/AUD.png) right 40px center no-repeat";
+    // Checks if CAD is currency and sets the flag
+    } else if (currency == "CAD") {
+      document.getElementById('currency').style.background = "url(img/CAD.png) right 40px center no-repeat";
+    }
+    // sets the size of the flag
+    document.getElementById('currency').style.backgroundSize = "40px";
+  });
 
   // Event handler for the submit button on the currency converter form
   $('form#currencyconverter').on('submit', function(event) {
