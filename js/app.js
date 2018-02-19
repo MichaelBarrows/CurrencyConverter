@@ -84,7 +84,7 @@ $(document).ready(function(){
   $('select#currency').on('click', function(event) {
   var currency = $('select[name="currency"]').val();
   if (currency == "USD") {
-    document.getElementById('currency').style.background = "url(img/USD.svg) right 40px center no-repeat";
+    document.getElementById('currency').style.background = "url(img/USD.png) right 40px center no-repeat";
   } else if (currency == "EUR") {
     document.getElementById('currency').style.background = "url(img/EUR.png) right 40px center no-repeat";
   } else if (currency == "JPY") {
