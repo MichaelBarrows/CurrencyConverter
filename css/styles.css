@@ -25,6 +25,9 @@ section {
       text-align: left;
       margin: 25px 0 0 5px;
       font-size: 1.1em; }
+    section .inner form input[name=amount] {
+      background: url(../img/GBP.png) right 40px center no-repeat;
+      background-size: 40px; }
     section .inner form input, section .inner form select {
       box-sizing: border-box;
       width: 100%;
@@ -43,8 +46,11 @@ section {
       letter-spacing: 0.1em; }
       section .inner form input[type=submit]:hover {
         opacity: 0.6; }
-    section .inner form select option {
-      font-family: "Work Sans", sans-serif; }
+    section .inner form select {
+      background: url(../img/USD.svg) right 40px center no-repeat;
+      background-size: 40px; }
+      section .inner form select option {
+        font-family: "Work Sans", sans-serif; }
     section .inner #converted-container {
       display: none;
       font-size: 1.5rem;
