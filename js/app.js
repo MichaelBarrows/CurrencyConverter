@@ -81,6 +81,25 @@ CurrencyConverter.prototype.convert = function() {
 // Waits until the DOM is ready to be manipulated before any of the containing
 // code can be run
 $(document).ready(function(){
+  $('select#currency').on('click', function(event) {
+  var currency = $('select[name="currency"]').val();
+  if (currency == "USD") {
+    document.getElementById('currency').style.background = "url(img/USD.svg) right 40px center no-repeat";
+  } else if (currency == "EUR") {
+    document.getElementById('currency').style.background = "url(img/EUR.png) right 40px center no-repeat";
+  } else if (currency == "JPY") {
+    document.getElementById('currency').style.background = "url(img/JPY.png) right 40px center no-repeat";
+  } else if (currency == "AUD") {
+    document.getElementById('currency').style.background = "url(img/AUD.png) right 40px center no-repeat";
+  } else if (currency == "CAD") {
+    document.getElementById('currency').style.background = "url(img/CAD.png) right 40px center no-repeat";
+  }
+
+  document.getElementById('currency').style.backgroundSize = "40px";
+});
+
+
+
   // Event handler for the submit button on the currency converter form
   $('form#currencyconverter').on('submit', function(event) {
     // Prevents the form from being submitted

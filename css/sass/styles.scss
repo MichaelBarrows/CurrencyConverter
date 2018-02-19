@@ -48,6 +48,12 @@ section {
         margin: 25px 0 0 5px;
         font-size: $form-font-size;
       }
+
+      input[name=amount] {
+
+          background: url(../img/GBP.png) right 40px center no-repeat;
+          background-size: 40px;
+      }
       // styles input and dropdown fields in the form
       input, select {
         // ensures padding and margins are contained within the elements width
@@ -80,8 +86,12 @@ section {
         }
       }
       // Styles the individual options in the drop down currencies list
-      select option {
-        font-family: $work-sans-font;
+      select {
+        background: url(../img/USD.svg) right 40px center no-repeat;
+        background-size: 40px;
+        option {
+          font-family: $work-sans-font;
+        }
       }
     }
     // holds the conversion information, initially not displayed until the user
