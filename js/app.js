@@ -1,4 +1,9 @@
 /**
+ * Author: Michael Barrows
+ * Date: February 2018
+ */
+
+/**
  * Currency Converter Object
  * this object is used to store various properties of the currency converter
  * and to perform it's operations. The stored properties include: the currency
@@ -87,19 +92,19 @@ $(document).ready(function(){
     var currency = $('select[name="currency"]').val();
     // Checks if USD is the currency and sets the flag
     if (currency == "USD") {
-      document.getElementById('currency').style.background = "url(img/USD.png) right 40px center no-repeat";
+      document.getElementById('currency').style.background = "url(img/USD.png) right 20px center no-repeat";
     // Checks if EUR is the currency and sets the flag
     } else if (currency == "EUR") {
-      document.getElementById('currency').style.background = "url(img/EUR.png) right 40px center no-repeat";
+      document.getElementById('currency').style.background = "url(img/EUR.png) right 20px center no-repeat";
     // Checks if JPY is currency and sets the flag
     } else if (currency == "JPY") {
-      document.getElementById('currency').style.background = "url(img/JPY.png) right 40px center no-repeat";
+      document.getElementById('currency').style.background = "url(img/JPY.png) right 20px center no-repeat";
     // Checks if AUD is currency and sets the flag
     } else if (currency == "AUD") {
-      document.getElementById('currency').style.background = "url(img/AUD.png) right 40px center no-repeat";
+      document.getElementById('currency').style.background = "url(img/AUD.png) right 20px center no-repeat";
     // Checks if CAD is currency and sets the flag
     } else if (currency == "CAD") {
-      document.getElementById('currency').style.background = "url(img/CAD.png) right 40px center no-repeat";
+      document.getElementById('currency').style.background = "url(img/CAD.png) right 20px center no-repeat";
     }
     // sets the size of the flag
     document.getElementById('currency').style.backgroundSize = "40px";

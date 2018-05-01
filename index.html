@@ -3,8 +3,6 @@
 <head>
   <title>Currency Converter</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/app.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
 </head>
@@ -31,6 +29,7 @@
       </select>
       <input type="submit" value="Convert">
     </form>
+    <div style="clear: both;"></div>
     <!-- Converion results are displayed once the conversion is complete -->
     <div id="converted-container">
       <p>&pound;<span id="original-amount"></span> = <span id="converted-amount"></span></p>
@@ -40,5 +39,8 @@
   </div>
   </section>
   <footer>&copy; Michael Barrows 2018.</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

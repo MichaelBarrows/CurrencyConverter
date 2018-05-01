@@ -50,7 +50,7 @@ section {
       }
       // Adds the Union Jack flag next to the amount to be converted
       input[name=amount] {
-          background: url(../img/GBP.png) right 40px center no-repeat;
+          background: url(../img/GBP.png) right 20px center no-repeat;
           background-size: 40px;
       }
       // styles input and dropdown fields in the form
@@ -86,7 +86,7 @@ section {
       }
       // Adds the US flag to the dropdown as this is the first option
       select {
-        background: url(../img/USD.png) right 40px center no-repeat;
+        background: url(../img/USD.png) right 20px center no-repeat;
         background-size: 40px;
         // Styles the individual options in the drop down currencies list
         option {
