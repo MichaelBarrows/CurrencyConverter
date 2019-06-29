@@ -28,7 +28,7 @@ CurrencyConverter.prototype.convert = function() {
   original_amount = this.original_amount;
   // The URL of the API that holds the currency conversion rates, appended
   // with the currency code, so as to only get that currency
-  var url = 'https://api.fixer.io/latest?base=GBP&symbols=' + currency;
+  var url = 'https://api.exchangeratesapi.io/latest?base=GBP&symbols=' + currency;
   // Retrieves the exchange rates from the Fixer API
   $.get(url, function(data) {
     // Checks if the currency is US, Australian or Canadian dollars, as these
